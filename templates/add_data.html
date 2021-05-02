@@ -1,0 +1,34 @@
+<html lang ="en">
+
+<head>
+  <title>MEDICORDS</title>
+  <meta charset = "utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="short description of this html page">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+<link rel="stylesheet" href="{{url_for('static',filename = "style.css")}}">
+</head>
+<body class = "body">
+
+  <div class = 'centered'>
+    <form method = 'POST'>
+      Name of Disease:<br>
+        <input type="text" class = "form-control" name="disease">
+        <br>
+      Month (in numbers):<br>
+        <input type="text" class = "form-control" name="mont">
+        <br>
+      Year:<br>
+        <input type="text" class = "form-control" name="saal">
+        <br>
+        <br>
+      <button class="btn btn-outline-success my-2 my-sm-0" type="submit" name = "data" value = "data">ADD DATA </button>
+    </form>
+
+  </div>
+
+
+
+
+</body>
+</html>

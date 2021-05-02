@@ -1,0 +1,38 @@
+<html lang ="en">
+
+<head>
+  <title>MEDICORD</title>
+  <meta charset = "utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="short description of this html page">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <link rel="stylesheet" href="{{ url_for ('static' , filename='style.css')}}">
+</head>
+
+<body class = "body">
+  <p></p>
+  <p></p>
+
+  <h1 style = "font-size:04vw"><center>WELCOME TO MEDICORDS</center></h1>
+
+
+    <form method = 'POST'>
+    <div class = "split left">
+      <div class = 'centered'>
+      <div class="button1">
+          <button class="btn btn-outline-success my-2 my-sm-0" name = "DOCTOR" value = 'DOCTOR' type="submit" style="width:550px ; height:520px"><h2>Are you a</h2><br><h1>DOCTOR</h1> </button>
+      </div>
+    </div>
+    </div>
+    <div class = 'split right'>
+      <div class = centered>
+      <div class="button2">
+          <button class="btn btn-outline-success my-2 my-sm-0" name = "PATIENT" value = "PATIENT" type="submit" style="width:550px ; height:520px"><h2>Are you a</h2><br><h1>PATIENT</h1> </button>
+      </div>
+    </div>
+    </div>
+    </form>
+
+
+</body>
+</html>

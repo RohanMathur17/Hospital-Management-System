@@ -1,0 +1,37 @@
+<html lang ="en">
+
+<head>
+  <title>MEDICORD</title>
+  <meta charset = "utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="short description of this html page">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+<link rel="stylesheet" href="{{url_for('static',filename = "style.css")}}">
+</head>
+<body class = "body">
+<div class = 'centered'>
+<form method = 'POST'>
+  USERNAME OF PATIENT:<br>
+  <input type="text" class = "form-control" name="naam">
+  <br>
+  DATE:<br>
+  <input type="text" class = "form-control" name="tareek">
+  <br>
+  MONTH:<br>
+  <input type="text" class = "form-control" name="mahina">
+  <br>
+  Time in 24 hour format (hour):<br>
+  <input type="text" class = "form-control" name="ghanta">
+  <br>
+  Time in 24 hour format (minutes):<br>
+  <input type="text" class = "form-control" name="minutes">
+  <br>
+
+  <br>
+  <button class="btn btn-outline-success my-2 my-sm-0" type="submit" name = "appoint" value = "appoint">ADD APPOINTMENT </button>
+
+</form>
+
+</div>
+</body>
+</html>

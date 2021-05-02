@@ -1,0 +1,65 @@
+<html lang ="en">
+
+<head>
+  <title>MEDICORD</title>
+  <meta charset = "utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="short description of this html page">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+<link rel="stylesheet" href="{{url_for('static',filename = "style.css")}}">
+</head>
+<body class = "body">
+
+  <div class = "container">
+    <br>
+
+    <br>
+    <h1> WELCOME TO MEDICORDS!! </h1>
+    <hr color = "#7FFFD4">
+
+    <div class = "split left">
+      <div class = "centered">
+        <h2> Already have an account? </h2>
+        <form method = "POST">
+          USERNAME:<br>
+          <input type="text" class = "form-control" name="username">
+          <br>
+          PASSWORD:<br>
+          <input type="text" class = "form-control" name="password">
+          <br><br>
+          <button class="btn btn-outline-success my-2 my-sm-0" type="submit" name = "signin1" value = "signin1">sign in </button>
+        </form>
+      </div>
+    </div>
+
+    <div class = "split right">
+      <div class = "vr"></div>
+      <div class = "centered">
+
+        <h2> Are you a new user ? </h2>
+    <form method = "POST">
+
+      FULL NAME:<br>
+      <input type="text" class = "form-control" name="name">
+
+      EMAIL ID:<br>
+      <input type="text" class = "form-control" name="email">
+
+
+      PHONE NUMBER:<br>
+      <input type="text" class = "form-control" name="phone">
+
+      USERNAME:<br>
+      <input type="text" class = "form-control" name="username_new">
+
+      PASSWORD:<br>
+      <input type="text" class = "form-control" name="password_new">
+
+      <br>
+      <button class="btn btn-outline-success my-2 my-sm-0" type="submit" name = "signup" value = "signup">sign up </button>
+    </form>
+</div>
+</div>
+  </div>
+</body>
+</html>

@@ -1,0 +1,57 @@
+<html lang ="en">
+
+<head>
+  <title>MEDICORD</title>
+  <meta charset = "utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="short description of this html page">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+<link rel="stylesheet" href="{{url_for('static',filename = "style.css")}}">
+</head>
+<body class = "body">
+
+  <div class = "container">
+    <br>
+
+    <br>
+
+    <hr color = "#7FFFD4">
+
+    <div class = "split left">
+      <div class = "centered">
+        <table border="1" cellpadding = "5" cellspacing = "5">
+          <tr>
+            <td><b><h5> DOCTORS</h5> </b></td>
+
+
+      {% for emp in data4 %}
+      <tr>
+        <td>{{ emp['doc'] }}</td></h4>
+
+      </tr>
+      {% endfor %}
+
+      </table>
+      </div>
+    </div>
+
+    <div class = "split right">
+      <div class = "vr"></div>
+      <div class = "centered">
+
+        <h2> ADD A DOCTOR </h2>
+    <form method = "POST">
+
+      USERNAME OF DOCTOR:<br>
+      <input type="text" class = "form-control" name="doname">
+
+
+
+      <br>
+      <button class="btn btn-outline-success my-2 my-sm-0" type="submit" name = "adddoc" value = "adddoc">ADD DOCTOR </button>
+    </form>
+</div>
+</div>
+  </div>
+</body>
+</html>

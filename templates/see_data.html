@@ -1,0 +1,43 @@
+<html lang ="en">
+
+<head>
+  <title>MEDICORD</title>
+  <meta charset = "utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="short description of this html page">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <link rel="stylesheet" href="{{ url_for ('static' , filename='style.css')}}">
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-md bg-dark navbar-dark">
+    <!-- Brand -->
+    <a class="navbar-brand" href="#">MEDICORDS </a>
+
+  </nav>
+
+  <center><h2>Your Medical History</h2></center><br><br>
+
+  <center>
+    <table border="1" cellpadding = "5" cellspacing = "5">
+      <tr>
+        <td><b><h5> Disease</h5> </b></td>
+        <td><b><h5> Month</h5> </b> </td>
+        <td><b><h5> Year </h5></b></td>
+        <td><b><h5> Doctor </h5></b></td></tr>
+
+  {% for emp in data2 %}
+  <tr>
+    <td>{{ emp['disease'] }}</td></h4>
+    <td>{{ emp['month'] }}</td></h4>
+    <td>{{ emp['year'] }}</td></h4>
+    <td>{{ emp['doctor'] }}</td></h4>
+
+  </tr>
+  {% endfor %}
+
+  </table>
+  </center>
+
+</body>
+</html>
